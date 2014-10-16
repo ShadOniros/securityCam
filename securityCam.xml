@@ -1,0 +1,18 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="rulesecuritycam" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="rulesecuritycam" scope="public">
+    <example>Sarah, je sort</example>
+    <tag>out.action=new Object(); </tag>
+
+    <item>Sarah</item>
+
+    <one-of>
+      <item>active la surveillance<tag>out.action.securityCamState = "on"</tag></item>
+	  <item>je sort<tag>out.action.securityCamState = "on"</tag></item>
+	  <item>neutralise la surveillance<tag>out.action.securityCamState = "off"</tag></item>
+	  <item>je suis rentré<tag>out.action.securityCamState = "off"</tag></item>
+	  <item>quel est l'état de la surveillance<tag>out.action.securityCamState = "securityCamState"</tag></item>
+    </one-of>
+
+    <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/securityCam";</tag>
+  </rule> 
+</grammar>

@@ -1,0 +1,14 @@
+{
+  "modules": { 
+    "securityCam": {
+      "description": "SARAH surveille la maison",
+      "version": "1.0",
+	  "on": "J'active la surveillance dans 5 secondes",
+	  "off": "Je désactive la surveillance",
+	  "stateOff": "La surveillance est actuellement désactivée",
+	  "stateOn": "La surveillance est actuellement activée",
+	  "motionWhileAway": "Un mouvement a été détecté en votre absence!",
+	  "motionDetected": "Intru détecté! Contre mesure activées"
+    }
+  }
+}
